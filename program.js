@@ -7,7 +7,7 @@
   var RADIUS_SCALE_MIN = 1;
   var RADIUS_SCALE_MAX = 5;
 
-  var QUANTITY = 29;
+  var QUANTITY = 35;
 
   var canvas;
   var context;
@@ -36,7 +36,11 @@
                        "¿Hasta dónde tuviste que llegar para darte cuenta que tenías que parar?",
                        "¿Y si sí?¿Por qué no?", 
                        "Bendita la crisis que me hizo crecer, la caída que me hizo mirar al cielo y el problema que me hizo buscar a Dios", 
-                       "Los monstruos de mi cabeza van ganando"];
+                       "Los monstruos de mi cabeza van ganando",
+                       "Ir por la vida sin alma", "Por miedo al '¿qué dirán?'",
+                       "Hoy decido dejarte ir","'Él actúa así por atención'",
+                       "Creo que la soledad no se sentirá tan abrumadora con ventanas que me protejan del mundo pero que aún me permitan verlo",
+                       "Aún sigo encontrando piedras atadas a mis pies" ];
 
   function randomColor() {
     var r = Math.floor(Math.random() * 256);
