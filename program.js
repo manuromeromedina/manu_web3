@@ -60,7 +60,7 @@
                          "2025: Vuelvo de nuevo", "2022: Me rompió", "2018: Me destruyó",
                          "2023: Me cambió", "2024: Me abrió los ojos", 
                          "Duermo con las luces encendidas por si vas a volver, como duele apagarlas al amanecer", 
-                         "Yo solo quería correr y por correr descalzo teengo heridas en los pies", 
+                         "Yo solo quería correr y por correr descalzo tengo heridas en los pies", 
                          "La verdad nunca la esuchó nadie", "Me voy antes de que me dañen",
                          "Te miras al espejo y no sos vos, no te ves igual", "Empezas a decir SI en vez de NO SE",
                          "¿Hasta dónde tuviste que llegar para darte cuenta que tenías que parar?",
