@@ -7,13 +7,13 @@
   var RADIUS_SCALE_MIN = 1;
   var RADIUS_SCALE_MAX = 5;
 
-  var QUANTITY = 28;
+  var QUANTITY = 29;
 
   var canvas;
   var context;
   var particles;
 
-  var PARTICLE_SIZE = 2;
+  var PARTICLE_SIZE = 5;
   
   var textParticles = ["¿Cómo tenés lo que querés tener con el tiempo que tenés?", 
                        "La cura está lejos", 
@@ -31,12 +31,12 @@
                        "2023: Me cambió", "2024: Me abrió los ojos", 
                        "Duermo con las luces encendidas por si vas a volver, como duele apagarlas al amanecer", 
                        "Yo solo quería correr y por correr descalzo tengo heridas en los pies", 
-                       "La verdad nunca la esuchó nadie", "Me voy antes de que me dañen",
+                       "La verdad nunca la escuchó nadie", "Me voy antes de que me dañen",
                        "Te miras al espejo y no sos vos, no te ves igual", "Empezas a decir SI en vez de NO SE",
                        "¿Hasta dónde tuviste que llegar para darte cuenta que tenías que parar?",
-                       "¿Y si sí?¿Por qué no?",
-                       "Bendita la crisis que me hizo crecer, la caída que me hizo mirar al cielo y el problema que me hizo buscar a Dios",
-                       ];
+                       "¿Y si sí?¿Por qué no?", 
+                       "Bendita la crisis que me hizo crecer, la caída que me hizo mirar al cielo y el problema que me hizo buscar a Dios", 
+                       "Los monstruos de mi cabeza van ganando"];
 
   function randomColor() {
     var r = Math.floor(Math.random() * 256);
@@ -57,9 +57,10 @@
       loop();
     }
   }
-  
+
   function createParticles() {
     particles = [];
+    var usedTextParticles = [...textParticles]; // Copiar el array de frases
 
     for (var i = 0; i < QUANTITY; i++) {
       var posX = Math.random() * SCREEN_WIDTH; // Usar SCREEN_WIDTH
@@ -69,7 +70,7 @@
       var directionX = -speed + (Math.random() * speed * 2);
       var directionY = -speed + (Math.random() * speed * 2);
 
-      var text = textParticles[Math.floor(Math.random() * textParticles.length)];
+      var text = usedTextParticles.pop(); // Tomar una frase del array
       var randomFillColor = randomColor();
 
       var particle = {
